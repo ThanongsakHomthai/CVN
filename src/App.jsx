@@ -46,8 +46,12 @@ const App = () => {
     return children;
   };
 
+  // Get base path from environment variable (for GitHub Pages)
+  // Default to "/" for local development
+  const basename = import.meta.env.VITE_BASE_PATH || '/';
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route
           path="/login"
