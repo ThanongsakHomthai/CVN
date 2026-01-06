@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Layout from "./components/Layout";
 import ManualOperate from "./pages/ManualOperate";
@@ -10,6 +10,29 @@ import Logs from "./pages/Logs";
 import ErrorMessage from "./pages/ErrorMessage";
 import "./styles/Layout.css";
 import "./styles/Pages.css";
+
+// Component to handle GitHub Pages 404 redirect
+const GitHubPagesRedirect = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Check if we have a redirect query parameter from 404.html
+    // Format: ?redirect=/path/to/page
+    const searchParams = new URLSearchParams(location.search);
+    const redirectPath = searchParams.get('redirect');
+    
+    if (redirectPath) {
+      // Remove the redirect parameter from URL and navigate to the path
+      searchParams.delete('redirect');
+      const newSearch = searchParams.toString();
+      const newPath = redirectPath + (newSearch ? '?' + newSearch : '') + location.hash;
+      navigate(newPath, { replace: true });
+    }
+  }, [location.search, location.hash, navigate]);
+
+  return null;
+};
 
 const App = () => {
   const [user, setUser] = useState(() => {
@@ -52,6 +75,7 @@ const App = () => {
 
   return (
     <BrowserRouter basename={basename}>
+      <GitHubPagesRedirect />
       <Routes>
         <Route
           path="/login"
