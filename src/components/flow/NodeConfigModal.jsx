@@ -282,7 +282,7 @@ const MoveConfigForm = ({ config, setConfig, parks }) => {
         color: "#0369a1",
         marginTop: "8px"
       }}>
-        <strong>หมายเหตุ:</strong> ระบบจะเลือก Park แรกที่มี use_state = 1 จากแต่ละ Group อัตโนมัติ
+        <strong>หมายเหตุ:</strong> ระบบจะเลือก Park แรกที่มี use_state ว่างจากแต่ละ Group อัตโนมัติ
       </div>
     </div>
   );

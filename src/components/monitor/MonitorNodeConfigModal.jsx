@@ -194,8 +194,7 @@ const LampConfigForm = ({ config, setConfig }) => {
           marginTop: "8px",
         }}
       >
-        <strong>การทำงาน:</strong> Lamp จะอ่านค่าจากตาราง <code>cvn_data_table_modbus</code>{" "}
-        ที่ IP และ Address ที่เลือก ทุก ๆ 1 วินาที โดยถือว่า <code>0 = Off</code>,{" "}
+        <strong>การทำงาน:</strong> Lamp จะอ่านสถานะตามที่ระบุที่ IP และ Address ที่เลือก ทุก ๆ 1 วินาที โดยถือว่า <code>0 = Off</code>,{" "}
         <code>1 = On</code> แล้วเปลี่ยนสี Lamp ให้ตรงกับสถานะ
       </div>
     </div>
@@ -246,7 +245,7 @@ const CounterConfigForm = ({ config, setConfig, parks }) => {
           marginTop: "8px",
         }}
       >
-        <strong>การทำงาน:</strong> Counter จะนับเพิ่ม +1 เมื่อใน Group ที่เลือกมี Park ใดๆ ที่ use_state เปลี่ยนจาก 1 เป็น 3 (นับแค่จังหวะแรกที่มีการอัพเดท)
+        <strong>การทำงาน:</strong> Counter จะนับเพิ่ม +1 เมื่อใน Group ที่เลือกมี Park ใดๆ ที่ทำงาน (นับแค่จังหวะแรกที่มีการอัพเดท)
       </div>
     </div>
   );
@@ -783,8 +782,7 @@ const BatteryConfigForm = ({ config, setConfig, agvs }) => {
           marginTop: "8px",
         }}
       >
-        <strong>การทำงาน:</strong> Battery node จะดึงค่าข้อมูล "battery" จาก JSON ใน{" "}
-        <code>cvn_data_agv</code> ใน field <code>agv_data</code> และนำค่ามาแสดงเป็นเปอร์เซ็นต์ (%){" "}
+        <strong>การทำงาน:</strong> Battery node จะดึงค่าข้อมูล "battery" จาก RCS มาแสดง
         เมื่อ node เริ่มทำการ run อัพเดททุก 2 วินาที
       </div>
     </div>
