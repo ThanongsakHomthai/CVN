@@ -3,7 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # หรือ master ถ้าใช้ branch นี้
+      - main
+      - master  # รองรับทั้ง main และ master
   workflow_dispatch:  # อนุญาตให้ trigger manual ได้
 
 permissions:
@@ -30,6 +31,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        continue-on-error: false
 
       - name: Build
         run: npm run build
@@ -37,6 +39,7 @@ jobs:
           # ตั้งค่า base path สำหรับ GitHub Pages
           # จะใช้ชื่อ repository อัตโนมัติ เช่น "/demo-vn-control/"
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
+        continue-on-error: false
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
