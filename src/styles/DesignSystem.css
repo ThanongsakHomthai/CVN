@@ -1,0 +1,531 @@
+/**
+ * Design System - Premium & Luxury Theme
+ * A comprehensive design system for elegant and modern UI
+ */
+
+:root {
+  /* ============================================
+     COLOR PALETTE - Premium & Luxury
+     ============================================ */
+  
+  /* Primary Colors - Deep Blue & Royal Purple */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary-950: #172554;
+
+  /* Accent Colors - Royal Purple & Gold */
+  --color-accent-purple-50: #faf5ff;
+  --color-accent-purple-100: #f3e8ff;
+  --color-accent-purple-200: #e9d5ff;
+  --color-accent-purple-300: #d8b4fe;
+  --color-accent-purple-400: #c084fc;
+  --color-accent-purple-500: #a855f7;
+  --color-accent-purple-600: #9333ea;
+  --color-accent-purple-700: #7e22ce;
+  --color-accent-purple-800: #6b21a8;
+  --color-accent-purple-900: #581c87;
+
+  --color-accent-gold-50: #fffbeb;
+  --color-accent-gold-100: #fef3c7;
+  --color-accent-gold-200: #fde68a;
+  --color-accent-gold-300: #fcd34d;
+  --color-accent-gold-400: #fbbf24;
+  --color-accent-gold-500: #f59e0b;
+  --color-accent-gold-600: #d97706;
+  --color-accent-gold-700: #b45309;
+  --color-accent-gold-800: #92400e;
+
+  /* Semantic Colors */
+  --color-success-50: #f0fdf4;
+  --color-success-100: #dcfce7;
+  --color-success-200: #bbf7d0;
+  --color-success-300: #86efac;
+  --color-success-400: #4ade80;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+  --color-success-700: #15803d;
+  --color-success-800: #166534;
+  --color-success-900: #14532d;
+
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-200: #fecaca;
+  --color-error-300: #fca5a5;
+  --color-error-400: #f87171;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+  --color-error-800: #991b1b;
+  --color-error-900: #7f1d1d;
+
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-200: #fde68a;
+  --color-warning-300: #fcd34d;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+
+  --color-info-50: #eff6ff;
+  --color-info-100: #dbeafe;
+  --color-info-200: #bfdbfe;
+  --color-info-300: #93c5fd;
+  --color-info-400: #60a5fa;
+  --color-info-500: #3b82f6;
+  --color-info-600: #2563eb;
+
+  /* Neutral Colors - Sophisticated Grays */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+
+  /* Dark Theme Colors */
+  --color-dark-bg-primary: #0f172a;
+  --color-dark-bg-secondary: #1e293b;
+  --color-dark-bg-tertiary: #334155;
+  --color-dark-surface: #1e293b;
+  --color-dark-surface-elevated: #334155;
+  --color-dark-border: #475569;
+  --color-dark-text-primary: #f1f5f9;
+  --color-dark-text-secondary: #cbd5e1;
+  --color-dark-text-tertiary: #94a3b8;
+
+  /* Light Theme Colors */
+  --color-light-bg-primary: #ffffff;
+  --color-light-bg-secondary: #f8fafc;
+  --color-light-bg-tertiary: #f1f5f9;
+  --color-light-surface: #ffffff;
+  --color-light-surface-elevated: #f8fafc;
+  --color-light-border: #e2e8f0;
+  --color-light-text-primary: #0f172a;
+  --color-light-text-secondary: #475569;
+  --color-light-text-tertiary: #64748b;
+
+  /* ============================================
+     TYPOGRAPHY SYSTEM
+     ============================================ */
+  
+  /* Font Families */
+  --font-family-primary: 'Inter', 'Segoe UI', 'Noto Sans Thai', system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  --font-family-display: 'Poppins', 'Inter', sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+  --font-size-5xl: 3rem;       /* 48px */
+  --font-size-6xl: 3.75rem;    /* 60px */
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* ============================================
+     SPACING SYSTEM
+     ============================================ */
+  
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;    /* 4px */
+  --spacing-2: 0.5rem;     /* 8px */
+  --spacing-3: 0.75rem;    /* 12px */
+  --spacing-4: 1rem;       /* 16px */
+  --spacing-5: 1.25rem;    /* 20px */
+  --spacing-6: 1.5rem;     /* 24px */
+  --spacing-8: 2rem;       /* 32px */
+  --spacing-10: 2.5rem;    /* 40px */
+  --spacing-12: 3rem;      /* 48px */
+  --spacing-16: 4rem;      /* 64px */
+  --spacing-20: 5rem;      /* 80px */
+  --spacing-24: 6rem;      /* 96px */
+  --spacing-32: 8rem;      /* 128px */
+
+  /* ============================================
+     BORDER RADIUS SYSTEM
+     ============================================ */
+  
+  --radius-none: 0;
+  --radius-sm: 0.125rem;    /* 2px */
+  --radius-base: 0.25rem;   /* 4px */
+  --radius-md: 0.375rem;    /* 6px */
+  --radius-lg: 0.5rem;      /* 8px */
+  --radius-xl: 0.75rem;     /* 12px */
+  --radius-2xl: 1rem;       /* 16px */
+  --radius-3xl: 1.5rem;     /* 24px */
+  --radius-full: 9999px;
+
+  /* ============================================
+     SHADOW SYSTEM - Premium Depth
+     ============================================ */
+  
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-base: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-2xl: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+  /* Colored Shadows - Premium Glow Effects */
+  --shadow-primary: 0 10px 25px -5px rgba(59, 130, 246, 0.3), 0 4px 6px -2px rgba(59, 130, 246, 0.2);
+  --shadow-purple: 0 10px 25px -5px rgba(168, 85, 247, 0.3), 0 4px 6px -2px rgba(168, 85, 247, 0.2);
+  --shadow-gold: 0 10px 25px -5px rgba(245, 158, 11, 0.3), 0 4px 6px -2px rgba(245, 158, 11, 0.2);
+  --shadow-success: 0 10px 25px -5px rgba(34, 197, 94, 0.3), 0 4px 6px -2px rgba(34, 197, 94, 0.2);
+  --shadow-error: 0 10px 25px -5px rgba(239, 68, 68, 0.3), 0 4px 6px -2px rgba(239, 68, 68, 0.2);
+
+  /* ============================================
+     TRANSITION & ANIMATION SYSTEM
+     ============================================ */
+  
+  /* Transition Durations */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 500ms;
+  --duration-slowest: 1000ms;
+
+  /* Transition Easing */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Standard Transitions */
+  --transition-fast: all var(--duration-fast) var(--ease-out);
+  --transition-base: all var(--duration-base) var(--ease-in-out);
+  --transition-slow: all var(--duration-slow) var(--ease-in-out);
+  --transition-smooth: all var(--duration-slow) var(--ease-smooth);
+
+  /* ============================================
+     Z-INDEX SYSTEM
+     ============================================ */
+  
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  --z-toast: 1080;
+  --z-max: 9999;
+
+  /* ============================================
+     GRADIENT SYSTEM - Premium Effects
+     ============================================ */
+  
+  --gradient-primary: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-800) 100%);
+  --gradient-purple: linear-gradient(135deg, var(--color-accent-purple-600) 0%, var(--color-accent-purple-800) 100%);
+  --gradient-gold: linear-gradient(135deg, var(--color-accent-gold-500) 0%, var(--color-accent-gold-700) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--color-dark-bg-primary) 0%, var(--color-dark-bg-secondary) 100%);
+  --gradient-light: linear-gradient(135deg, var(--color-light-bg-primary) 0%, var(--color-light-bg-secondary) 100%);
+  --gradient-radial-primary: radial-gradient(circle at top left, var(--color-primary-100) 0%, var(--color-light-bg-secondary) 50%, var(--color-light-bg-tertiary) 100%);
+  --gradient-radial-dark: radial-gradient(circle at center, var(--color-dark-bg-primary) 0%, var(--color-dark-bg-secondary) 100%);
+
+  /* ============================================
+     COMPONENT TOKENS
+     ============================================ */
+  
+  /* Buttons */
+  --button-height-sm: 2rem;      /* 32px */
+  --button-height-base: 2.5rem;  /* 40px */
+  --button-height-lg: 3rem;      /* 48px */
+  --button-padding-x-sm: 0.75rem;
+  --button-padding-x-base: 1rem;
+  --button-padding-x-lg: 1.5rem;
+  --button-radius: var(--radius-lg);
+  --button-font-weight: var(--font-weight-semibold);
+  --button-transition: var(--transition-base);
+
+  /* Inputs */
+  --input-height-base: 2.5rem;
+  --input-padding-x: 0.75rem;
+  --input-padding-y: 0.5rem;
+  --input-radius: var(--radius-lg);
+  --input-border-width: 1px;
+  --input-border-color: var(--color-light-border);
+  --input-focus-border-color: var(--color-primary-500);
+  --input-focus-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+
+  /* Cards */
+  --card-padding: var(--spacing-6);
+  --card-radius: var(--radius-xl);
+  --card-shadow: var(--shadow-md);
+  --card-shadow-hover: var(--shadow-lg);
+  --card-background: var(--color-light-surface);
+  --card-border: 1px solid var(--color-light-border);
+
+  /* Modals */
+  --modal-backdrop: rgba(15, 23, 42, 0.75);
+  --modal-backdrop-blur: blur(8px);
+  --modal-radius: var(--radius-2xl);
+  --modal-shadow: var(--shadow-2xl);
+  --modal-max-width: 32rem;
+  --modal-padding: var(--spacing-6);
+
+  /* Tooltips */
+  --tooltip-radius: var(--radius-md);
+  --tooltip-padding: var(--spacing-2) var(--spacing-3);
+  --tooltip-font-size: var(--font-size-sm);
+  --tooltip-shadow: var(--shadow-lg);
+
+  /* Badges */
+  --badge-radius: var(--radius-full);
+  --badge-padding-x: var(--spacing-3);
+  --badge-padding-y: var(--spacing-1);
+  --badge-font-size: var(--font-size-xs);
+  --badge-font-weight: var(--font-weight-semibold);
+}
+
+/* ============================================
+   UTILITY CLASSES - Premium Effects
+   ============================================ */
+
+/* Glass Morphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Premium Glow Effects */
+.glow-primary {
+  box-shadow: var(--shadow-primary);
+}
+
+.glow-purple {
+  box-shadow: var(--shadow-purple);
+}
+
+.glow-gold {
+  box-shadow: var(--shadow-gold);
+}
+
+.glow-success {
+  box-shadow: var(--shadow-success);
+}
+
+.glow-error {
+  box-shadow: var(--shadow-error);
+}
+
+/* Smooth Hover Effects */
+.hover-lift {
+  transition: var(--transition-smooth);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hover-scale {
+  transition: var(--transition-smooth);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Premium Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--duration-slow) var(--ease-out);
+}
+
+.animate-slide-in {
+  animation: slideIn var(--duration-slow) var(--ease-out);
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Premium Text Effects */
+.text-gradient-primary {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-purple {
+  background: var(--gradient-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-shadow-soft {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-strong {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Premium Borders */
+.border-gradient-primary {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--color-light-surface), var(--color-light-surface)) padding-box,
+              var(--gradient-primary) border-box;
+}
+
+.border-glow-primary {
+  border: 2px solid var(--color-primary-500);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Premium Scrollbar */
+.premium-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.premium-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-light-bg-tertiary);
+  border-radius: var(--radius-full);
+}
+
+.premium-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-primary-500);
+  border-radius: var(--radius-full);
+  transition: var(--transition-base);
+}
+
+.premium-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-600);
+}
+
+/* Focus States - Premium */
+.focus-ring-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.focus-ring-purple:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+}
+
+/* Premium Divider */
+.divider-gradient {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-light-border),
+    transparent
+  );
+}
+
+.divider-gradient-vertical {
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-light-border),
+    transparent
+  );
+}
+

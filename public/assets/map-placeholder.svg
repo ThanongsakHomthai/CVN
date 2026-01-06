@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <pattern
+      id="grid"
+      width="60"
+      height="60"
+      patternUnits="userSpaceOnUse"
+      patternTransform="scale(1)"
+    >
+      <path
+        d="M 60 0 L 60 60 0 60"
+        fill="none"
+        stroke="rgba(255,255,255,0.08)"
+        stroke-width="2"
+      />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <rect width="1200" height="800" fill="url(#grid)" />
+
+  <g fill="none" stroke="rgba(59,130,246,0.4)" stroke-width="8">
+    <path d="M150 650 L350 450 L600 500 L900 350 L1050 420" />
+    <path d="M150 350 L350 250 L600 300 L900 150 L1050 200" />
+  </g>
+
+  <g fill="none" stroke="rgba(16,185,129,0.4)" stroke-width="6">
+    <path d="M100 100 L400 600 L800 250 L1150 650" />
+  </g>
+
+  <text
+    x="50%"
+    y="50%"
+    dominant-baseline="middle"
+    text-anchor="middle"
+    fill="rgba(255,255,255,0.2)"
+    font-size="64"
+    font-family="Segoe UI, sans-serif"
+  >
+    MAP PLACEHOLDER
+  </text>
+</svg>
+
+

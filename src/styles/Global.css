@@ -1,0 +1,33 @@
+/* Import Design System */
+@import './DesignSystem.css';
+
+/* Legacy Variables - Keep for backward compatibility */
+:root {
+  --primary-red: var(--color-error-600);
+  --dark-red: var(--color-error-700);
+  --darker-red: var(--color-error-800);
+  --light-gray: var(--color-neutral-100);
+  --medium-gray: var(--color-neutral-300);
+  --text-dark: var(--color-light-text-primary);
+  --text-muted: var(--color-light-text-tertiary);
+  --white: var(--color-light-surface);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Noto Sans Thai", system-ui, -apple-system, sans-serif;
+  background: var(--white);
+  color: var(--text-dark);
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
